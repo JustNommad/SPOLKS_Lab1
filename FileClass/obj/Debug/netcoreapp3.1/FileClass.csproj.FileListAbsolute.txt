@@ -1,0 +1,9 @@
+C:\Users\JustNomad\source\repos\SPOLKS_Lab1\FileClass\bin\Debug\netcoreapp3.1\FileClass.deps.json
+C:\Users\JustNomad\source\repos\SPOLKS_Lab1\FileClass\bin\Debug\netcoreapp3.1\FileClass.dll
+C:\Users\JustNomad\source\repos\SPOLKS_Lab1\FileClass\bin\Debug\netcoreapp3.1\FileClass.pdb
+C:\Users\JustNomad\source\repos\SPOLKS_Lab1\FileClass\obj\Debug\netcoreapp3.1\FileClass.csprojAssemblyReference.cache
+C:\Users\JustNomad\source\repos\SPOLKS_Lab1\FileClass\obj\Debug\netcoreapp3.1\FileClass.AssemblyInfoInputs.cache
+C:\Users\JustNomad\source\repos\SPOLKS_Lab1\FileClass\obj\Debug\netcoreapp3.1\FileClass.AssemblyInfo.cs
+C:\Users\JustNomad\source\repos\SPOLKS_Lab1\FileClass\obj\Debug\netcoreapp3.1\FileClass.csproj.CoreCompileInputs.cache
+C:\Users\JustNomad\source\repos\SPOLKS_Lab1\FileClass\obj\Debug\netcoreapp3.1\FileClass.dll
+C:\Users\JustNomad\source\repos\SPOLKS_Lab1\FileClass\obj\Debug\netcoreapp3.1\FileClass.pdb

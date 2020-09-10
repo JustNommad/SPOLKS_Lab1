@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SPOLKS_Lab1/1.0.0": {
+        "dependencies": {
+          "FileClass": "1.0.0"
+        },
+        "runtime": {
+          "SPOLKS_Lab1.dll": {}
+        }
+      },
+      "FileClass/1.0.0": {
+        "runtime": {
+          "FileClass.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SPOLKS_Lab1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileClass/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
