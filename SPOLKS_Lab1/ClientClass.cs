@@ -70,6 +70,7 @@ namespace SPOLKS_Lab1
                 case "TCP":
                     {
                         Thread tcpSendThread = new Thread(new ParameterizedThreadStart(TCPSend));
+                        tcpSendThread.IsBackground = true;
                         tcpSendThread.Start(userName);
                         break;
                     }
@@ -103,13 +104,9 @@ namespace SPOLKS_Lab1
                         ProtocolType = "TCP",
                         DestinationName = userName
                     };
+                    SendStringBytes("TCPProtocol");
+
                     byte[] i = info.ToArray();
-                    SendStringBytes("TCPProtocol:" + i.Length.ToString());
-                    string answer = "";
-                    while(answer != "OK")
-                    {
-                        answer = ReceivingString();
-                    }
                     _tcpSocket.Send(i);
                     byte[] to = file.ToArray();
                     _tcpSocket.Send(to);

@@ -20,9 +20,10 @@ namespace SPOLKS_Lab1
         {
             DataInfo d = FromArray(data);
             ClientName = d.ClientName;
-            FileName = d.ClientName;
+            FileName = d.FileName;
             FileSize = d.FileSize;
             DestinationName = d.DestinationName;
+            ProtocolType = d.ProtocolType;
         }
         public static DataInfo FromArray(byte[] data)
         {

@@ -26,29 +26,17 @@ namespace Server_Lab1
                 while (true)
                 {
                     var answer = ReceivingString(Client);
-                    string typeData = "";
-                    string sizeData = "";
-                    bool s = false;
-                    SendStringBytes(Client, "OK");
-                    foreach (var c in answer)
-                    {
-                        if (c == ':')
-                            s = true;
-                        else if (!s)
-                            typeData += c;
-                        else if (s)
-                            sizeData += c;
-                    }
-                    switch (typeData)
+                    
+                    switch (answer)
                     {
                         case "TCPProtocol":
                             {
-                                ReceivingAllData(answer, int.Parse(sizeData));
+                                ReceivingAllData(answer, Client.Available);
                                 break;
                             }
                         case "UDPProtocol":
                             {
-                                ReceivingAllData(answer, int.Parse(sizeData));
+                                ReceivingAllData(answer, Client.Available);
                                 break;
                             }
                     }

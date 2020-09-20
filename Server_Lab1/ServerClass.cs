@@ -45,6 +45,7 @@ namespace Server_Lab1
                         SendUserList();
                     }
                     Thread clientThread = new Thread(new ThreadStart(clientList[index].Process));
+                    clientThread.IsBackground = true;
                     clientThread.Start();
                 }
             }
