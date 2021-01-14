@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\Server_Lab1\\Server_Lab1.csproj": {}
+    "D:\\SPOLKS_Lab1\\Server_Lab1\\Server_Lab1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\FileClass\\FileClass.csproj": {
+    "D:\\SPOLKS_Lab1\\FileClass\\FileClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\FileClass\\FileClass.csproj",
+        "projectUniqueName": "D:\\SPOLKS_Lab1\\FileClass\\FileClass.csproj",
         "projectName": "FileClass",
-        "projectPath": "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\FileClass\\FileClass.csproj",
+        "projectPath": "D:\\SPOLKS_Lab1\\FileClass\\FileClass.csproj",
         "packagesPath": "C:\\Users\\JustNomad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\FileClass\\obj\\",
+        "outputPath": "D:\\SPOLKS_Lab1\\FileClass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\JustNomad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -60,22 +59,21 @@
         }
       }
     },
-    "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\Server_Lab1\\Server_Lab1.csproj": {
+    "D:\\SPOLKS_Lab1\\Server_Lab1\\Server_Lab1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\Server_Lab1\\Server_Lab1.csproj",
+        "projectUniqueName": "D:\\SPOLKS_Lab1\\Server_Lab1\\Server_Lab1.csproj",
         "projectName": "Server_Lab1",
-        "projectPath": "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\Server_Lab1\\Server_Lab1.csproj",
+        "projectPath": "D:\\SPOLKS_Lab1\\Server_Lab1\\Server_Lab1.csproj",
         "packagesPath": "C:\\Users\\JustNomad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\Server_Lab1\\obj\\",
+        "outputPath": "D:\\SPOLKS_Lab1\\Server_Lab1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\JustNomad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -87,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\FileClass\\FileClass.csproj": {
-                "projectPath": "C:\\Users\\JustNomad\\source\\repos\\SPOLKS_Lab1\\FileClass\\FileClass.csproj"
+              "D:\\SPOLKS_Lab1\\FileClass\\FileClass.csproj": {
+                "projectPath": "D:\\SPOLKS_Lab1\\FileClass\\FileClass.csproj"
               }
             }
           }

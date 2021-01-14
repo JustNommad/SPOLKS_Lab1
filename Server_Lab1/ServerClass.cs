@@ -15,8 +15,8 @@ namespace Server_Lab1
 {
     class ServerClass
     {
-        protected List<ClientClass> clientList;
-        private const string _ip = "192.168.31.163";
+        public static List<ClientClass> clientList;
+        private const string _ip = "192.168.31.192";
         private const int _port = 8080;
 
         private IPEndPoint _tcpEndPoint;

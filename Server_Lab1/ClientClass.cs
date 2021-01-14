@@ -5,12 +5,13 @@ using System.IO;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using FileClass;
 using SPOLKS_Lab1;
 
 namespace Server_Lab1
 {
-    class ClientClass : ServerClass
+    class ClientClass
     {
         const int bufferSize = 8192;
         public string Name { get; set; }
@@ -97,6 +98,7 @@ namespace Server_Lab1
             byte[] dataInfo = info.ToArray();
             string comand = "Client:" + dataInfo.Length.ToString();
             SendStringBytes(client, comand);
+            Thread.Sleep(10);
             client.Send(dataInfo);
 
             while (true)
@@ -121,14 +123,25 @@ namespace Server_Lab1
                     byte[] buffer = new byte[bufferSize];
                     ReceivingBytes(memStream, buffer, size);
                     fileInfo = new DataInfo(memStream.ToArray());
+
+                    using (MemoryStream memFileStream = new MemoryStream())
+                    {
+                        ReceivingBytes(memFileStream, buffer, fileInfo.FileSize);
+                        file = memFileStream.ToArray();
+                    }
                 }
-                using (MemoryStream memStream = new MemoryStream())
+
+                Socket destination = null;
+
+                foreach (var dest in ServerClass.clientList)
                 {
-                    byte[] buffer = new byte[bufferSize];
-                    ReceivingBytes(memStream, buffer, fileInfo.FileSize);
-                    file = memStream.ToArray();
+                    if(dest.Name.Equals(fileInfo.DestinationName))
+                    {
+                        destination = dest.Client;
+                    }
                 }
-                Socket destination = clientList.Where(x => x.Name == fileInfo.DestinationName) as Socket;
+
+
                 var choise = SendDataInfo(fileInfo, destination);
 
                 switch (choise)

@@ -24,7 +24,7 @@ namespace SPOLKS_Lab1
         private Socket _udpSocket;
         private IPEndPoint _tcpEndPoint;
         private IPEndPoint _udpEndPoint;
-        private const string _ip = "192.168.31.163";
+        private const string _ip = "192.168.31.192";
         private const int _port = 8080;
         private const string _pathTo = "C:\\to\\";
         public ObservableCollection<string> clientList;
@@ -108,6 +108,7 @@ namespace SPOLKS_Lab1
 
                     byte[] i = info.ToArray();
                     _tcpSocket.Send(i);
+                    Thread.Sleep(10);
                     byte[] to = file.ToArray();
                     _tcpSocket.Send(to);
                 }
@@ -124,6 +125,7 @@ namespace SPOLKS_Lab1
                 string sizeData = "";
                 bool s = false;
                 DataInfo info = new DataInfo();
+
 
                 foreach (var c in answer)
                 {
@@ -180,7 +182,6 @@ namespace SPOLKS_Lab1
                 {
                     stream.Write(file.Data, 0, file.Data.Length);
                 }
-                _tcpSocket.Shutdown(SocketShutdown.Both);
             }catch(Exception ex)
             {
                 MessageBox.Show($"TCP Receiving: {ex.Message}");

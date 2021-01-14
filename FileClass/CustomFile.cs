@@ -11,15 +11,6 @@ namespace FileClass
     {
         private byte[] _data;
 
-        public CustomFile() { }
-
-        public CustomFile(byte[] data)
-        {
-            CustomFile file = FromArray(data);
-            FileName = file.FileName;
-            Data = file.Data;
-        }
-
         public string FileName { get; set; }
 
         public byte[] Data
@@ -36,6 +27,15 @@ namespace FileClass
         }
 
         public string Checksum { get; set; }
+
+        public CustomFile() { }
+
+        public CustomFile(byte[] data)
+        {
+            CustomFile file = FromArray(data);
+            FileName = file.FileName;
+            Data = file.Data;
+        }
 
         public static string GetMD5Hash(byte[] source)
         {
